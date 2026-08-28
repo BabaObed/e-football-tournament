@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eFootball Arena</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">⚽ eFOOTBALL <span>ARENA</span></div>
+    <button id="howBtn">How it works</button>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+      <div>
+        <p class="eyebrow">8-PLAYER TOURNAMENTS</p>
+
+        <h1>
+          Find your next
+          <br>
+          <span>eFootball opponent.</span>
+        </h1>
+
+        <p class="description">
+          Join a room, meet 7 other players, get your tournament
+          bracket and play for the championship.
+        </p>
+
+        <button class="join-button" id="joinHero">
+          JOIN A TOURNAMENT →
+        </button>
+      </div>
+
+      <div class="hero-card">
+        <p class="live">● LIVE LOBBY</p>
+
+        <div class="number">
+          <span id="heroCount">3</span><small>/8</small>
+        </div>
+
+        <p>players waiting</p>
+
+        <div class="mini-players">
+          <span>OBED</span>
+          <span>DAVID</span>
+          <span>MIKE</span>
+          <span>+ 5 SPOTS</span>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- LOBBY -->
+    <section class="lobby" id="lobby">
+
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">OPEN ROOM</p>
+          <h2>Tournament Lobby</h2>
+        </div>
+
+        <div class="room">
+          ROOM <strong>EF-1042</strong>
+        </div>
+      </div>
+
+
+      <div class="lobby-box">
+
+        <!-- JOIN FORM -->
+        <div class="join-form">
+
+          <label>Your eFootball name</label>
+
+          <input
+            id="playerName"
+            type="text"
+            placeholder="e.g. BabaObed"
+          >
+
+          <label>eFootball ID <span>(optional)</span></label>
+
+          <input
+            id="playerId"
+            type="text"
+            placeholder="Enter your game ID"
+          >
+
+          <button class="join-button full" id="joinBtn">
+            JOIN ROOM
+          </button>
+
+          <p class="small">
+            Enter your name and join the 8-player tournament.
+          </p>
+
+        </div>
+
+
+        <!-- PLAYER LIST -->
+        <div class="players-panel">
+
+          <div class="players-title">
+
+            <strong>
+              <span id="count">3</span>/8 PLAYERS
+            </strong>
+
+            <span id="status">
+              Waiting for players...
+            </span>
+
+          </div>
+
+          <div id="players" class="players-grid"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BRACKET -->
+    <section class="bracket-section">
+
+      <div class="section-title">
+
+        <div>
+          <p class="eyebrow">TOURNAMENT</p>
+          <h2>Bracket</h2>
+        </div>
+
+        <button id="resetBtn">
+          Reset Demo
+        </button>
+
+      </div>
+
+
+      <div id="bracket" class="bracket"></div>
+
+      <div id="startMessage" class="notice">
+        Join until the room reaches 8 players.
+        The tournament bracket will appear automatically.
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- HOW IT WORKS POPUP -->
+
+  <div class="modal hidden" id="howModal">
+
+    <div class="modal-box">
+
+      <button class="close" id="closeModal">
+        ×
+      </button>
+
+      <p class="eyebrow">HOW IT WORKS</p>
+
+      <h2>From lobby to champion</h2>
+
+      <ol>
+        <li>Players enter an 8-player room.</li>
+        <li>When the room is full, the bracket is created.</li>
+        <li>Players play their eFootball matches.</li>
+        <li>Winners advance to the next round.</li>
+        <li>The final winner becomes champion.</li>
+      </ol>
+
+    </div>
+
+  </div>
+
+
+  <footer>
+    eFootball Arena • 8 Player Tournament
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
