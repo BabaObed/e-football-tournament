@@ -349,3 +349,5 @@ function escapeHtml(text) {
 
 
 renderPlayers();
+// Test connection
+console.log("eFootball Arena is working!");
